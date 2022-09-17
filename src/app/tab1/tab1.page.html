@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<!--bottao-->
+<ion-content [fullscreen]="true">
+  <ion-button (click)="chamarMensagem()">Clique Aqui</ion-button>
+  <b>Mensagem: </b> {{mensagem}}
+<!--Labels-->
+  <ion-item>
+    <ion-label position="floating">Digita Ai</ion-label>
+    <ion-input [(ngModel)] ="textoDigitado"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>{{textoDigitado}}</ion-label>
+  </ion-item>
+</ion-content>  
